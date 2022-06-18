@@ -13,7 +13,8 @@ h2 {
     margin: 0;
 }
 
-a, a:hover {
+a,
+a:hover {
     text-decoration: none;
 }
 
@@ -216,7 +217,7 @@ main section img {
 footer {
     background-color: #002626;
     padding: 25px 50px;
-    margin-top: 200px;
+    margin-top: 20px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -246,6 +247,7 @@ footer .social img {
 }
 
 @media screen and (max-width: 900px) {
+
     #hero,
     .home-grid {
         display: block !important;
@@ -298,4 +300,81 @@ footer .social img {
     footer {
         margin-top: 25px;
     }
+
+    /* blog styles */
+    .blog {
+        width: 98%;
+        margin: 0 auto;
+    }
+
+    .content {
+        width: 75%;
+        /* overflow-x: hidden; */
+        padding: 10px 15px;
+        margin: 0 auto;
+    }
+
+    .content img {
+        width: 100%;
+    }
+}
+
+/* Blog Styles */
+.blog {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.blog-header {
+    margin: 50px auto;
+
+}
+
+.blog-header h2 {
+    font-size: 2em;
+    text-align: center;
+}
+
+.blog-header p {
+    font-size: 0.8em;
+    text-align: center;
+    color: #6f7364;
+    margin: -15px;
+}
+
+.blog-content {
+    text-align: left;
+}
+
+.content {
+    margin-top: 30px;
+}
+
+.content img {
+    margin: 0;
+}
+
+.content p {
+    margin: 1em auto 0.5em;
+}
+
+/* pagination style */
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+p.btn {
+    display: inline-block;
+    width: auto;
+    padding: 10px 15px;
+    margin: 0px auto;
+    border: 1px solid #868686;
+    background-color: #bababa;
+}
+
+.active,
+p.btn:hover {
+    background-color: #002626 !important;
+    color: #ffffff;
 }
