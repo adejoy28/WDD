@@ -136,10 +136,38 @@ main section img {
     grid-template-rows: repeat(9, auto);
 }
 
-#service-item-section h3 {
+.service-section-card {
+    position: relative;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    /* border: 2px solid rgb(54, 40, 180); */
+}
+
+.service-section-card:hover img {
+    opacity: 0.2;
+}
+
+/* #service-item-section:hover img {
+} */
+
+.service-section-card .middle {
     display: block;
-    width: 100%;
-    grid-row: 1/11;
+    position: absolute;
+    left: 10%;
+    top: 30%;
+    width: 80%;
+    opacity: 0;
+    /* grid-row: 1/11; */
+}
+
+.service-section-card h3 {
+    color: #be3e82;
+    text-align: center;
+}
+
+
+.service-section-card:hover .middle {
+    opacity: 1;
 }
 
 .wdd-card {
