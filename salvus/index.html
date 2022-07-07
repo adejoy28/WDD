@@ -1,127 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salvus Digitals</title>
-    <link rel="stylesheet" href="styles/style.css">
-</head>
-<body>
-    <div id="content">
-        <header>
-            <a href="index.html" id="logo_link">
-                <img src="images/logo.jpg" alt="Salvus Digitals Logo" class="logo">
-            </a>
-            <nav>
-                <a href="index.html" class="active">Home</a>
-                <a href="services.html">Services</a>
-                <a href="contact.html">Contact Us</a>
-            </nav>
-        </header>
-        <div id="hero">
-            <div id="hero-box">
-                <img src="images/hero.jpg" alt="Hero Pic" id="hero-img">
-            </div>
-            <section id="hero-msg">
-                <h2>Salvus Digital Solutions</h2>
-                <p>Salvus Digital Solutions is a company vast, experienced and qualified enough to provide
-                    solutions to your digital problems.
-                </p>
-                <button class="btn">Learn more</button>
-            </section>
-        </div>
-        <main class="home-grid">
-            <div class="services-section">
-                <h2>Services</h2>
-                <div id="service-item-section">
-                    <section class="wdd-card service-section-card">
-                        <img src="images/homepage-1.jpg" alt="web design and development" class="card-img">
-                        <div class="middle">
-                            <h3>Web Design and Development</h3>
-                        </div>
-                    </section>
-                    <section class="add-card service-section-card">
-                        <img src="images/homepage-2.jpg" alt="web design and development" class="card-img">
-                        <div class="middle">
-                            <h3>App Design and Development</h3>
-                        </div>
-                    </section>
-                    <section class="gdi-card service-section-card">
-                        <img src="images/services-2.jpg" alt="web design and development" class="card-img">
-                        <div class="middle">
-                            <h3>Graphics Design and Illustration</h3>
-                        </div>
-                    </section>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Salvus Digitals</title>
+        <link rel="stylesheet" href="styles/style.css">
+              <link rel="stylesheet"
+                  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <div id="content">
+            <header>
+                <a href="index.html" id="logo_link">
+                    <img src="images/logo.jpg" alt="Salvus Digitals Logo" class="logo">
+                </a>
+                <nav id="topnav" class="topnav">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="services.html">Services</a>
+                    <a href="contact.html">Contact Us</a>
+                </nav>
+                <a href="javascript:void(0);" title="Nav Icon" class="nav-icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </header>
+            <div id="hero">
+                <div id="hero-box">
+                    <img src="images/hero.jpg" alt="Hero Pic" id="hero-img">
                 </div>
+                <section id="hero-msg">
+                    <h2>Salvus Digital Solutions</h2>
+                    <p>Salvus Digital Solutions is a company vast, experienced and qualified enough to provide
+                        solutions to your digital problems.
+                    </p>
+                    <button class="btn">Learn more</button>
+                </section>
             </div>
-            <div id="clients-section">
-                <h2>Clients</h2>
-                <div class="clients">
-                    <img src="images/logo.jpg" alt="first-client">
-                    <img src="images/logo.jpg" alt="second-client">
-                    <img src="images/logo.jpg" alt="third-client">
-                    <img src="images/logo.jpg" alt="fourth-client">
-                    <img src="images/logo.jpg" alt="fifth-client">
+            <main class="home-grid">
+                <div class="services-section">
+                    <h2>Services</h2>
+                    <div id="service-item-section">
+                        <section class="wdd-card service-section-card">
+                            <img src="images/homepage-1.jpg" alt="web design and development" class="card-img">
+                            <div class="middle">
+                                <h3>Web Design and Development</h3>
+                            </div>
+                        </section>
+                        <section class="add-card service-section-card">
+                            <img src="images/homepage-2.jpg" alt="web design and development" class="card-img">
+                            <div class="middle">
+                                <h3>App Design and Development</h3>
+                            </div>
+                        </section>
+                        <section class="gdi-card service-section-card">
+                            <img src="images/services-2.jpg" alt="web design and development" class="card-img">
+                            <div class="middle">
+                                <h3>Graphics Design and Illustration</h3>
+                            </div>
+                        </section>
+                    </div>
                 </div>
-            </div>
-            <div id="contact-section">
-                <!-- <section>
+                <div id="clients-section">
+                    <h2>Clients</h2>
+                    <div class="clients">
+                        <img src="images/logo.jpg" alt="first-client">
+                        <img src="images/logo.jpg" alt="second-client">
+                        <img src="images/logo.jpg" alt="third-client">
+                        <img src="images/logo.jpg" alt="fourth-client">
+                        <img src="images/logo.jpg" alt="fifth-client">
+                    </div>
+                </div>
+                <div id="contact-section">
+                    <!-- <section>
                     <img src="images/contact-1.jpg" alt="contact image">
                 </section> -->
-                <section>
-                    <h2>Get in touch with us</h2>
-                    <form action="#" method="post">
+                    <section>
+                        <h2>Get in touch with us</h2>
+                        <form action="#" method="post">
                             <div>
                                 <input type="text" placeholder="Full name" name="names" id="names">
                                 <input type="email" placeholder="E-mail" name="email" id="email">
                             </div>
                             <div>
-                                <textarea name="message" id="message" placeholder="Your message here......" cols="30" rows="10"></textarea>
+                                <textarea name="message" id="message" placeholder="Your message here......" cols="30"
+                                    rows="10"></textarea>
                             </div>
                             <div>
                                 <input type="button" class="btn" value="Submit">
                             </div>
-                    </form>
-                </section>
-            </div>
-        </main>
-        <footer>
-            <div id="footer-content">
-                <section class="items item1">
-                    <h2>Salvus Digital Solutions</h2>
-                    <p>Salvus Digital Solutions is a company vast, experienced and qualified enough to provide
-                        solutions to your digital problems.</p>
-                </section>
-                <section class="items item2">
-                    <h2>Quick links.</h2>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                        <li><a href="site-plan.html">Site Map</a></li>
-                    </ul>
-                </section>
-                <section class="items item3">
-                    <h2>Subscribe here!</h2>
-                    <input type="text" name="email" id="newsletter-email">
-                     <div class="social">
-                         <a href="http://facebook.com" target="_blank">
-                             <img src="images/facebook.png" alt="fb icon">
-                         </a>
-                         <a href="http://twitter.com" target="_blank">
-                             <img src="images/twitter.png" alt="twitter icon">
-                         </a>
-                         <a href="http://instagram.com" target="_blank">
-                             <img src="images/instagram.png" alt="instagram icon">
-                         </a>
-                     </div>
-                </section>
-            </div>
-            <div class="copy-sections">
-                <p><a href="index.html" class="a-null">Salvus Digital Consults</a>.&copy; Copyright 2022. All rights reserved </p>
-            </div>
-        </footer>
-    </div>
-</body>
+                        </form>
+                    </section>
+                </div>
+            </main>
+            <footer>
+                <div id="footer-content">
+                    <section class="items item1">
+                        <h2>Salvus Digital Solutions</h2>
+                        <p>Salvus Digital Solutions is a company vast, experienced and qualified enough to provide
+                            solutions to your digital problems.</p>
+                    </section>
+                    <section class="items item2">
+                        <h2>Quick links.</h2>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="site-plan.html">Site Map</a></li>
+                        </ul>
+                    </section>
+                    <section class="items item3">
+                        <h2>Subscribe here!</h2>
+                        <input type="text" name="email" id="newsletter-email">
+                        <div class="social">
+                            <a href="http://facebook.com" target="_blank">
+                                <img src="images/facebook.png" alt="fb icon">
+                            </a>
+                            <a href="http://twitter.com" target="_blank">
+                                <img src="images/twitter.png" alt="twitter icon">
+                            </a>
+                            <a href="http://instagram.com" target="_blank">
+                                <img src="images/instagram.png" alt="instagram icon">
+                            </a>
+                        </div>
+                    </section>
+                </div>
+                <div class="copy-sections">
+                    <p><a href="index.html" class="a-null">Salvus Digital Consults</a>.&copy; Copyright 2022. All rights
+                        reserved </p>
+                </div>
+            </footer>
+        </div>
+    </body>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("topnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
 </html>

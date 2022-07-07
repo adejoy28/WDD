@@ -55,7 +55,7 @@ header {
     grid-template-columns: 80px auto;
     padding: 20px 80px;
     background-color: #fff;
-    /* border: 1px solid red; */
+    border-bottom: #be3e82 1px solid;
 }
 
 #logo_link {
@@ -74,7 +74,9 @@ nav {
 nav a {
     padding: 5px 40px;
 }
-
+.nav-icon {
+    display: none;
+}
 img {
     width: 100%;
 }
@@ -213,7 +215,68 @@ main section img {
     width: 150px;
 }
 
-/* Contact us section style */
+/* ######################
+    Services Pages
+   ######################*/
+.services {
+    width: 80%;
+    /* border-top: #71697a 1px solid; */
+    /* display: grid;
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr); */
+}
+
+.conte h2 {
+    color: #be3e82;
+}
+
+#page-title {
+    display: block;
+    width: 100%;
+    /* height: 150px; */
+    padding: 50px 0;
+}
+
+#page-title h2 {
+    text-align: center;
+    margin: 0 auto;
+    /* border: #be3e82 1px solid; */
+}
+
+.services section {
+    display: flex;
+    /* grid-template-columns: 1fr 1fr; */
+    height: 300px;
+    overflow-y: hidden;
+    margin: 20px auto;
+}
+
+.services section img {
+    width: 50%;
+    height: initial;
+}
+
+.services-content {
+    width: 50%;
+    padding-left: 20px;
+}
+
+.cont-2,
+.cont-4 {
+    padding-right: 20px;
+    padding-left: 0;
+}
+
+.services-page-section-2,
+.services-page-section-4 {
+    flex-direction: row-reverse;
+    /* grid-column: 2/3; */
+}
+
+
+
+/* ######################
+    Contact us section style
+   ######################*/
 #contact-section {
     background-image: url(../images/contact-1.jpg);
     color: #fff;
@@ -253,7 +316,8 @@ form div input {
 footer {
     max-width: 100%;
     display: block;
-    /* border: 1px solid red; */
+    margin-top: 50px;
+    border-top: 1px solid #71697a;
 }
 
 footer h2 {
@@ -287,4 +351,70 @@ footer .social img {
 .copy-sections a {
     text-transform: capitalize;
     font-size: 1em;
+}
+
+
+@media screen and (max-width: 900px) {
+
+    /* Navigations styles */
+    header nav {
+        display: none;
+    }
+
+    .nav-icon {
+        display: block;
+        float: right;
+        text-align: right;
+        padding: 20px;
+    }
+
+    header {
+        position: relative;
+    }
+
+    .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }   
+
+    .responsive  {
+        position: absolute;
+        display: block;
+        text-align: left;
+        width: 100%;
+        top: 130px;
+        background-color: #be3e82;
+        color: white;
+    }
+    .responsive a {
+        display: block;
+        color: #fff;
+    }
+
+    /* Services page style */
+    .services section {
+        display: block;
+        height: auto;
+        width: 100%;
+        border: 1px solid red;
+    }
+
+    .services section img,
+    .services section div {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    
+    #footer-content {
+        display: block;
+    }
+    footer section {
+        display: block;
+        width: 100%;
+        padding: 5px;
+    }
 }
