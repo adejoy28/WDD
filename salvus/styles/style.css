@@ -74,9 +74,11 @@ nav {
 nav a {
     padding: 5px 40px;
 }
+
 .nav-icon {
     display: none;
 }
+
 img {
     width: 100%;
 }
@@ -215,6 +217,41 @@ main section img {
     width: 150px;
 }
 
+#contact-section {
+    background-image: url(../images/contact-1.jpg);
+    color: #fff;
+}
+
+#contact-section section {
+    background-color: rgba(0, 0, 0, 0.658);
+    width: 100%;
+    height: 100%;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#contact-section section form {
+    width: 50%;
+    margin: 0 auto;
+    /* border: #71697a 1px solid; */
+}
+
+#contact-section form div,
+#contact-section textarea {
+    width: 100%;
+    /* border: 1px solid #be3e82; */
+    display: flex;
+}
+
+#contact-section form div input {
+    display: inline-block;
+    width: 100%;
+    /* height: 30px; */
+    margin: 10px 0;
+    padding: 10px 5px;
+    border-radius: 5px;
+}
+
 /* ######################
     Services Pages
    ######################*/
@@ -277,39 +314,99 @@ main section img {
 /* ######################
     Contact us section style
    ######################*/
-#contact-section {
-    background-image: url(../images/contact-1.jpg);
-    color: #fff;
+.contactus {
+    /* width: 100%; */
+    padding: 0 10%;
 }
 
-#contact-section section {
-    background-color: rgba(0, 0, 0, 0.658);
-    width: 100%;
-    height: 100%;
-    padding: 50px 0;
+.contactus #address-location {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+}
+
+.contactus #address-location #map {
+    height: 350px;
+    overflow: hidden;
+}
+
+.contactus #address-location #address {
+    padding: 0 2em;
+}
+
+#contact-form {
+    /* background-color:  ; */
+    padding: 50px 10px;
+    /* border: #be3e82 1px solid; */
     text-align: center;
 }
 
-#contact-section section form {
-    width: 50%;
+#contact-form form {
+    /* width: 70%; */
     margin: 0 auto;
-    /* border: #71697a 1px solid; */
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
 }
 
-form div,
-textarea {
+#contact-form form div:nth-of-type(1),
+#contact-form form div:nth-of-type(3) {
     width: 100%;
-    /* border: 1px solid #be3e82; */
-    display: flex;
+    grid-column: 2/3;
+    padding-top: 10px;
 }
 
-form div input {
-    display: inline-block;
+#contact-form form div:nth-of-type(2),
+#contact-form form div:nth-of-type(4) {
     width: 100%;
-    /* height: 30px; */
-    margin: 10px 0;
-    padding: 10px 5px;
-    border-radius: 5px;
+    grid-column: 3/4;
+    padding-top: 10px;
+}
+
+#contact-form form div:nth-of-type(5) {
+    grid-column: 2/4;
+    padding-top: 10px;
+}
+
+#contact-form form div:last-of-type {
+    grid-column: 2/3;
+}
+
+
+
+#contact-form form div label {
+    display: block;
+    text-align: left;
+}
+
+#contact-form form div input {
+    display: block;
+    width: 90%;
+    height: 25px;
+    margin: 2px 0;
+}
+
+#contact-form form div textarea {
+    display: block;
+    width: 95%;
+    /* margin: 2px 0; */
+}
+
+#contact-form form div:nth-of-type(6) input {
+    height: 30px;
+    background: #be3e82;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 1em;
+    margin-top: 10px;
+    transition: ease .5s;
+}
+
+#contact-form form div:nth-of-type(6) input:hover {
+    background-color: #fff;
+    color: #be3e82;
+    border: 1px solid #be3e82;
+
 }
 
 /* Footer */
@@ -376,9 +473,9 @@ footer .social img {
         position: absolute;
         right: 0;
         top: 0;
-    }   
+    }
 
-    .responsive  {
+    .responsive {
         position: absolute;
         display: block;
         text-align: left;
@@ -387,9 +484,53 @@ footer .social img {
         background-color: #be3e82;
         color: white;
     }
+
     .responsive a {
         display: block;
         color: #fff;
+    }
+
+    /* Home Page responsive style */
+    #hero {
+        display: block;
+        position: relative;
+        margin: 0;
+        height: auto;
+    }
+
+    #hero-box {
+        z-index: -5;
+    }
+
+    #hero-msg {
+        position: absolute;
+        top: 80px;
+        left: 80px;
+    }
+
+    #hero-msg h2 {
+        font-size: 2.8em;
+    }
+
+    .services-section #service-item-section {
+        display: block;
+    }
+
+    .services-section #service-item-section section {
+        margin: 10px 0;
+        font-size: 1.8em;
+    }
+
+    .clients {
+        overflow-x: auto;
+    }
+
+    .clients img {
+        margin: 0 5px;
+    }
+
+    #contact-section section form {
+        width: 80%;
     }
 
     /* Services page style */
@@ -402,15 +543,48 @@ footer .social img {
     .services section img,
     .services section div {
         width: 100%;
+        overflow-x: hidden;
+        padding: 0;
+    }
+
+    .contactus #address-location {
+        display: block;
+    }
+
+    .contactus #address-location #address {
+        padding: 20px 0;
+    }
+
+    .contactus #contact-form {
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin: 0%;
+    }
+
+    .contactus #contact-form form {
+        display: grid;
+        grid-template-columns: 1px 1fr 1fr 1px;
     }
 
 }
 
 @media screen and (max-width: 600px) {
-    
+
+    #hero-msg {
+        position: absolute;
+        top: 35px;
+        left: 50px;
+    }
+
+    #hero-msg h2 {
+        font-size: 1.9em;
+    }
+
     #footer-content {
         display: block;
     }
+
     footer section {
         display: block;
         width: 100%;

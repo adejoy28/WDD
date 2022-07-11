@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Component test</title>
+    <style>
+        .add-card {
+            width: 450px;
+            position: relative;
+            display: block;
+        }
+        img {
+            width: 100%;
+            transition: .5s ease;
+            backface-visibility: hidden;
+        }
+        .middle {
+            position: absolute;
+            left: 100px;
+            top: 40%;
+            width: 200px;
+            border: 1px solid red;
+        }
+        .add-card:hover img{
+            opacity: .3;
+        }
+        .add-card:hover .middle h3{
+            opacity: 1;
+        }
+        .middle h3 {
+            color: blueviolet;
+            text-align: center;
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <section class="add-card">
+        <img src="images/homepage-2.jpg" alt="web design and development" class="card-img">
+        <div class="middle">
+            <h3>App Design and Development</h3>
+        </div>
+    </section>
+</body>
+</html>
