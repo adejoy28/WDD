@@ -150,6 +150,9 @@ main section img {
 .service-section-card:hover img {
     opacity: 0.2;
 }
+.service-section-card .card-img{
+    height: 100%;
+}
 
 /* #service-item-section:hover img {
 } */
