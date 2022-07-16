@@ -486,6 +486,7 @@ footer .social img {
         top: 130px;
         background-color: #be3e82;
         color: white;
+        z-index: 99;
     }
 
     .responsive a {
@@ -502,7 +503,7 @@ footer .social img {
     }
 
     #hero-box {
-        z-index: -5;
+        z-index: -50;
     }
 
     #hero-msg {
@@ -512,7 +513,7 @@ footer .social img {
     }
 
     #hero-msg h2 {
-        font-size: 2.8em;
+        font-size: 2em;
     }
 
     .services-section #service-item-section {
@@ -574,6 +575,9 @@ footer .social img {
 
 @media screen and (max-width: 600px) {
 
+    .nav-icon {
+        padding: 15px 5px;
+    }
     #hero-msg {
         position: absolute;
         top: 35px;
