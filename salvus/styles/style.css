@@ -150,7 +150,8 @@ main section img {
 .service-section-card:hover img {
     opacity: 0.2;
 }
-.service-section-card .card-img{
+
+.service-section-card .card-img {
     height: 100%;
 }
 
@@ -578,14 +579,21 @@ footer .social img {
     .nav-icon {
         padding: 15px 5px;
     }
+
     #hero-msg {
         position: absolute;
         top: 35px;
         left: 50px;
+        width: 85%;
     }
 
     #hero-msg h2 {
         font-size: 1.9em;
+    }
+
+    .services-section #service-item-section section {
+        margin: 10px 0;
+        font-size: 1.0em;
     }
 
     #footer-content {
